@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SWeek 5 Website</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Scenario Week 5 Website</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstr4p.min.css" rel="stylesheet">
+  
+        <link href="css/bootstr4p.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <style>
 
@@ -18,9 +20,10 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid" style="font-family: 'Quicksand', sans-serif;">
+    <nav class="navbar navbar-inverse" style="font-family: 'Quicksand', sans-serif;">
+  <div class="container-fluid">
     <div class="navbar-header">
+      
       <a class="navbar-brand" href="#">Vulnerable Website</a>
     </div>
 
@@ -33,16 +36,23 @@
   </div>
 </nav>
 
-    <div class="container"style="font-family: 'Quicksand', sans-serif;">
+
+   <div class="container"style="font-family: 'Quicksand', sans-serif;">
     <div class="span3 well" style="padding-left: 70px;padding-right: 70px">
-    <h1>User Profile</h1><br>
+    <h1>User Profile</h1>
         <h3>{{username}}</h3>
         <img src="..." name="aboutme" width="140" height="140" class="img-circle">
         
         <h4>{{if admin}}</h4>
-    
+    <br>
 
 <div class="row">
+
+<h3>Homepage URL</h3>
+
+<div class="alert alert-dismissible alert-info">
+  {{homepage.limit}}
+</div>
 
 <h3>All Snippets</h3>
 

@@ -13,14 +13,13 @@
 
     <style>
 
-
     </style>
   </head>
 
 
   <body>
 
-  <nav class="navbar navbar-inverse">
+     <nav class="navbar navbar-inverse">
   <div class="container-fluid" style="font-family: 'Quicksand', sans-serif;">
     <div class="navbar-header">
       
@@ -36,18 +35,42 @@
   </div>
 </nav>
 
-    <div class="container">
-    <div class="span3 well" style="font-family: 'Quicksand', sans-serif;">
-    <center><h1>User Profile</h1></center>
+  <div class="container"style="font-family: 'Quicksand', sans-serif;">
+    <div class="span3 well" style="padding-left: 70px;padding-right: 70px">
+    <center><h1>Log In</h1></center>
+
     <br>
-    <center><h1>Username: {{Username}}</h1></center>
-    <center><h1>Password: {{Password}}</h1></center>
+    <form class="form-horizontal">
+  <fieldset>
+  <div style="padding-left: 200px;padding-right: 250px">
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Username</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="{{Username}}">
+      </div></div>
+    </div>
+     <div style="padding-left: 200px;padding-right: 250px">
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="{{Password}}">
+        
+      </div>
+    </div></div>
 
-    <br><br>
+    <div class="form-group">
+      <center>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </center>
+    </div>
+  </fieldset>
+</form>
 
   </div>
+</div>
 
-  </div>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
