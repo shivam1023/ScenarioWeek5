@@ -7,9 +7,10 @@
     <title>SWeek 5 Website</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstr4p.min.css" rel="stylesheet">
-    <style>
+        <link href="css/bootstr4p.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
+    <style>
     </style>
   </head>
 
@@ -17,22 +18,14 @@
   <body>
 
     <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+  <div class="container-fluid" style="font-family: 'Quicksand', sans-serif;">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Insecure Website</a>
+      
+      <a class="navbar-brand" href="#">Vulnerable Website</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
+      
        <ul class="nav navbar-nav navbar-right">
         <li><a href="#">{{username}}</a></li>
       </ul>
@@ -40,45 +33,48 @@
   </div>
 </nav>
 
-  <div class="children" style="padding:20px;padding-top: 20px;padding-right: 50px;padding-left: 50px">
-  <div class="jumbotron" style="padding:50px">
 
-    <div class="container">
-    <div class="span3 well">
-        <img src="..." name="aboutme" width="140" height="140" class="img-circle">
-        <h3>{{username}}</h3>
+    <div class="container" style="font-family: 'Quicksand', sans-serif;">
+
+    <div class="well" style="padding-left: 70px; padding-right:70px">
+    <h1>Your Profile</h1><br>
+      <div class="row">
+        <div class="col-md-6"><h3>{{username}}</h3>
+        <img src="..." width="140" height="140" class="img-circle">
+        
         <h4>{{if admin}}</h4>
-        <br><br>
-        <a href="#" class="btn btn-warning">Change user details</a>
-    <br><br>
+        <a href="#" class="btn btn-primary">Edit Your Details</a>
+        
+        </div>
+        <div class="row">
+        
+        <div class="col-md-3"><h3>New Snippet</h3><textarea rows="8" cols="40"></textarea><br><a href="#" class="btn btn-primary">Post Snippet</a></div>
+      </div>
+      </div>
 
-    <div class="row" style="padding-left: 50px">
-  <div class="col-md-6"><h3>Public Snippet</h3><textarea rows="4" cols="50"></textarea><a href="#" class="btn btn-success">Post Snippet</a></div>
-  
-  <div class="col-md-6"><h3>Private Snippet</h3><textarea rows="4" cols="50"></textarea><a href="#" class="btn btn-success">Post Snippet</a></div>
-</div><br>
+    
 
-<div class="row" style="padding-left: 50px">
+<div class="row">
 
-<h3>Homepage</h3>
+<h3>Homepage URL</h3>
 
 <div class="alert alert-dismissible alert-info">
   {{homepage.limit}}
 </div>
 
-<h3>Your Snippets</h3>
+<h3>All Snippets</h3>
 
-<div class="alert alert-dismissible alert-success">
+<div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>
 
-<div class="alert alert-dismissible alert-success">
+<div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>
 
-<div class="alert alert-dismissible alert-success">
+<div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>

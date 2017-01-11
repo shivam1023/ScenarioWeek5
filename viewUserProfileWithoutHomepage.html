@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstr4p.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <style>
 
 
@@ -18,22 +19,13 @@
   <body>
 
     <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+  <div class="container-fluid" style="font-family: 'Quicksand', sans-serif;">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Insecure Website</a>
+      <a class="navbar-brand" href="#">Vulnerable Website</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
+      
        <ul class="nav navbar-nav navbar-right">
         <li><a href="#">{{username}}</a></li>
       </ul>
@@ -41,33 +33,30 @@
   </div>
 </nav>
 
-  <div class="children" style="padding:20px;padding-top: 20px;padding-right: 50px;padding-left: 50px">
-  <div class="jumbotron" style="padding:50px">
-
-    <div class="container">
-    <div class="span3 well">
-        <center>
-        <img src="..." name="aboutme" width="140" height="140" class="img-circle">
+    <div class="container"style="font-family: 'Quicksand', sans-serif;">
+    <div class="span3 well" style="padding-left: 70px;padding-right: 70px">
+    <h1>User Profile</h1><br>
         <h3>{{username}}</h3>
+        <img src="..." name="aboutme" width="140" height="140" class="img-circle">
+        
         <h4>{{if admin}}</h4>
-    </center>
-    <br><br>
+    
 
-<div class="row" style="padding-left: 50px">
+<div class="row">
 
-<h3>Your Snippets</h3>
+<h3>All Snippets</h3>
 
-<div class="alert alert-dismissible alert-success">
+<div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>
 
-<div class="alert alert-dismissible alert-success">
+<div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>
 
-<div class="alert alert-dismissible alert-success">
+<div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 </div>
