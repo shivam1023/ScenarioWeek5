@@ -4,28 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Scenario Week 5 Website</title>
+    <title>SWeek 5 Website</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/bootstr4p.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <style>
-
 
     </style>
   </head>
 
 
   <body>
-
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -35,14 +26,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Insecure Website</a>
+      <a class="navbar-brand" href="#">Vulnerable Website</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
+      
        <ul class="nav navbar-nav navbar-right">
         <li><a href="#">{{username}}</a></li>
       </ul>
@@ -50,15 +38,13 @@
   </div>
 </nav>
 
-  <div class="children" style="padding:20px;padding-top: 20px;padding-right: 50px;padding-left: 50px">
-  <div class="jumbotron" style="padding:50px">
 
-    <div class="container">
-    <div class="span3 well">
+    <div class="container" style="font-family: 'Quicksand', sans-serif;">
+    <div class="well">
 
-        <center><h1> Change other user details</h1></center><br><br>
+        <center><h1> Change User Details</h1></center><br>
 
-        <h3>Choose user</h3>
+        <h3>Select User ID</h3>
         <div class="row">
             <div class="col-md-10">  <select class="form-control" id="select">
           <option>1</option>
@@ -66,46 +52,10 @@
           <option>3</option>
           <option>4</option>
           <option>5</option>
-        </select><br></div>
-            
+        </select></div>
           </div>
 
-
-        
-        <br>
-          <h3>Username</h3>
-          <div class="row">
-            <div class="col-md-10"><input type="text" class="form-control" id="inputEmail" placeholder="Email"><br></div>
-            <div class="col-md-2"><a href="#" class="btn btn-success">Success</a></div>
-          </div>
-
-          <h3>Password</h3>
-           <div class="row">
-            <div class="col-md-10"> <input type="text" class="form-control" id="inputEmail" placeholder="Email"><br></div>
-            <div class="col-md-2"><a href="#" class="btn btn-success">Success</a></div>
-          </div>
-
-          <h3>URL for profile image (Icon)</h3>
-           <div class="row">
-            <div class="col-md-10"> <input type="text" class="form-control" id="inputEmail" placeholder="Email"><br></div>
-            <div class="col-md-2"><a href="#" class="btn btn-success">Success</a></div>
-          </div>
-
-          <h3>URL for a homepage</h3>
-           <div class="row">
-            <div class="col-md-10"><input type="text" class="form-control" id="inputEmail" placeholder="Email"><br></div>
-            <div class="col-md-2"><a href="#" class="btn btn-success">Success</a></div>
-          </div>
-
-          <h3>Profile colour</h3>
-           <div class="row">
-            <div class="col-md-10"> <input type="text" class="form-control" id="inputEmail" placeholder="Email"><br></div>
-            <div class="col-md-2"><a href="#" class="btn btn-success">Success</a></div>
-          </div>
-
-
-
-          <h3>Set Admin</h3>
+          <h3>Administrator</h3>
           <div class="radio">
           <label>
             <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
@@ -116,6 +66,36 @@
             <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
             False
           </label>
+          <br><br>
+          <h3>Change Username</h3>
+          <div class="row">
+            <div class="col-md-10"><input type="text" class="form-control" placeholder="Username"><br></div>
+            <div class="col-md-2"><a href="#" class="btn btn-primary">Submit</a></div>
+          </div>
+
+          <h3>Change Password</h3>
+           <div class="row">
+            <div class="col-md-10"> <input type="text" class="form-control" placeholder="Password"><br></div>
+            <div class="col-md-2"><a href="#" class="btn btn-primary">Submit</a></div>
+          </div>
+
+          <h3>Change URL for Profile Picture</h3>
+           <div class="row">
+            <div class="col-md-10"> <input type="text" class="form-control" placeholder="Icon URL"><br></div>
+            <div class="col-md-2"><a href="#" class="btn btn-primary">Submit</a></div>
+          </div>
+
+          <h3>Change URL for Home Page</h3>
+           <div class="row">
+            <div class="col-md-10"><input type="text" class="form-control" placeholder="Homepage URL"><br></div>
+            <div class="col-md-2"><a href="#" class="btn btn-primary">Submit</a></div>
+          </div>
+
+          <h3>Change Profile Colour</h3>
+           <div class="row">
+            <div class="col-md-10"> <input type="text" class="form-control" placeholder="Colour"><br></div>
+            <div class="col-md-2"><a href="#" class="btn btn-primary">Submit</a></div>
+          </div>
           </div>
    
 
